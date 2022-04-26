@@ -1,6 +1,6 @@
 # Dashboard Cards
 tarjetas de visualizacion de cantidad de sensores, dispositivos, equipos y usuarios.
-![alt text](https://https://github.com/kabarcagracia/Dashboard-Cards/blob/main/Captura.PNG?raw=true)
+![alt text](https://https://github.com/kabarcagracia/Dashboard-Cards/main/Captura.PNG?raw=true)
 ![Employee data](/Dashboard-Cards/Captura.PNG?raw=true "Employee Data title")
 Captura.PNG
 ## Instalación
