@@ -1,5 +1,9 @@
 # Dashboard Cards
+
+
 tarjetas de visualizacion de cantidad de sensores, dispositivos, equipos y usuarios.
+
+
 ![Employee data](/Captura.PNG?raw=true "Employee Data title")
 
 ## Instalación
