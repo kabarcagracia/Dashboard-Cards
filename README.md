@@ -1,5 +1,6 @@
 # Dashboard Cards
 tarjetas de visualizacion de cantidad de sensores, dispositivos, equipos y usuarios.
+![alt text](https://https://github.com/kabarcagracia/Dashboard-Cards/blob/main/Captura.PNG?raw=true)
 ## Instalación
 Paso 1: Instalación librerias
 
