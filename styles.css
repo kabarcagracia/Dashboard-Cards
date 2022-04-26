@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(247, 247, 247);
+    overflow-x: auto;
+}
+
+
+.container-nav {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr;
+    grid-template-rows: 1;
+    width: 100%;
+    align-items: center;
+}
+
+.container-nav__button {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 1em;
+    justify-self: center;
+    
+}
+.container-nav__logo {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 2em;
+}
+.logo_2 {
+    justify-self: flex-end;
+}
+.container-nav__user {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: flex-end;
+    margin-right: 1em;
+
+    display: grid;
+    grid-template-columns: auto 50px;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.user_rol {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0px;
+    padding: 0em 1em 0em 0em;
+    font-size: 1em;
+    justify-self: flex-end;
+    align-self: flex-end;
+    font-family: 'Oswald', sans-serif;
+
+}
+.user_name {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0px;
+    padding: 0em 1em 0em 0em;
+    font-size: 1em;
+    justify-self: flex-end;
+    align-self: top;
+    font-family: 'Oswald', sans-serif;
+}
+.user_image {
+    grid-column: 2;
+    grid-row: span 2;
+    align-self: center;
+    
+}
+
+
+
+
+.sparkline-body {
+    display: grid;
+    grid-template-columns: auto 120px;
+    grid-template-rows: 1fr auto;
+    /*padding: 1em 1em 0em 1em;*/
+}
+.sparkline-body__text {
+    grid-column: 1;
+    grid-row: 1;
+    /*padding: 1em;*/
+}
+.sparkline-body__icon {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+.sparkline-body__chart {
+    grid-column: span 2;
+    grid-row: 2;
+}

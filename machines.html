@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 01</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Apexcharts.js-->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light shadow py-1" id="navbar-example2">
+        <div class="container-nav">
+            <div class="container-nav__button">
+                
+                <!-- BOTON MENU DESPLEGABLE-->
+                <i class="fas fa-bars btn btn-transparent" style="font-size: 1.5em;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+
+                <!-- MENU DESPLEGABLE-->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">MENU PRINCIPAL</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                        </div>
+                        <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-nav__logo d-none d-sm-block">
+                <img src="/images/logo.png" alt="" height="50px" class="">
+            </div>
+            <div class="container-nav__logo logo_2 d-block d-sm-none">
+                <img src="/images/favicon.png" alt="" height="50px" class="">
+            </div>
+            <div class="container-nav__user ">
+                <div class="user_rol d-none d-sm-block">
+                    <b style="text-transform: uppercase;">
+                        tecnico de Operaciones
+                    </b>
+                </div>
+                <div class="user_name d-none d-sm-block">
+                    <p style="text-transform: capitalize;">
+                        kevin abarca gracia
+                    </p>
+                </div>
+                <div class="user_image">
+                    <div class="btn-group">
+                        <img src="/images/user.png" alt="" class="dropdown-toggle" height="45px" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" type="button">Action</button></li>
+                            <li><button class="dropdown-item" type="button">Another action</button></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" type="button">Cerrar Sesión</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="container-fluid bg-success mx-0 px-0">
+            
+            
+            <div class="navbar-brand"></div>
+            
+            
+            
+            
+            
+        
+            <ul class="nav float-left bg-danger">
+                <li class="nav-item">
+                    
+                </li>
+            </ul>
+
+            
+        </div>-->
+
+
+        <!-- DATOS USUARIO -->
+        <!--<div class="main-content__navbar__user">
+            <div class="usuario">
+                <div class="usuario__logo"><button type="button" class="btn btn-circle p-0" data-toggle="modal" data-target="#exampleModal"><img src="/images/user.png" alt="" height="45px"></button></div>
+                <div class="usuario__rol">
+                    <b style="text-transform: uppercase;">tecnico</b>
+                </div>
+                <div class="usuario__nombre">
+                    <p style="text-transform: capitalize;">kevin abarca gracia</p>
+                </div>
+
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background: rgb(0,0,0);background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,19,1) 35%, rgba(0,19,23,0.8209033613445378) 100%);">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">CERRAR SESIÓN</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/images/logo.png" class="img-fluid px-5 my-4 mx-auto d-block">
+                                <p class="text-lead text-center mb-0" style="font-size: 1.7em;">Estimado <b>Tommy Angelo</b> ¿Estas seguro que quieres cerrar tu sesión?</p>
+                                <p class="text-lead text-center mb-0" style="font-size: 1.7em;"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <a type="button" class="btn btn-info" data-dismiss="modal">Volver</a>
+                                <a type="button" class="btn btn-danger" onclick="close_sesion()">Si, Cerrar Sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </nav>
+    <div class="container bg-danger">
+    </div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+</html>
